@@ -1,0 +1,30 @@
+$left-space : 0.5rem;
+
+.input{
+    border: none;
+    border: solid 1px red;
+    border-radius: 4px;
+    height: 3.0rem;
+    outline: none;
+    padding-left: $left-space;
+    width: 100%;
+}
+
+.input:focus + .input-name{
+    top: -3rem;
+}
+.input-name{
+    left: $left-space;
+    line-height: 3.0rem;
+    position: absolute;
+    top: 0;
+    transition-duration: 0.3s;
+    transition-property: top;
+}
+.input-name.hasContent{
+    top: -3rem;
+}
+.input-wrapper{
+    display: block;
+    position: relative;
+}
