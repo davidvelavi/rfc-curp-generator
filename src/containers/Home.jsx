@@ -9,6 +9,8 @@ const Home = () => (
     <Input id='lastName' label='Apellido Paterno' />
     <Input id='secondLastName' label='Apellido Paterno' />
     <Input id='birthDate' label='Fecha de nacimiento ' />
+    <Input id='gender' label='Genero ' />
+    <Input id='state' label='Estado' />
   </Form>
 );
 

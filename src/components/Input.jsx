@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import { connect } from 'react-redux';
 import '../assets/styles/components/Input.scss';
+import { setFieldValue } from '../actions';
 
 const Input = (props) => {
-  const { id, label } = props;
+  const { id, label, dataUser } = props;
   const [field, setValue] = useState({
     hasContent: false,
     [id]: '',
@@ -15,6 +17,11 @@ const Input = (props) => {
       ...field,
       [target.id]: value,
       hasContent: Boolean(value),
+    });
+
+    props.setFieldValue({
+      ...dataUser,
+      [target.id]: value,
     });
   };
   const inputClass = classNames('input-name', { hasContent: field.hasContent });
@@ -31,5 +38,9 @@ const Input = (props) => {
     </div>
   );
 };
-export default Input;
+
+const mapDispatchToProps = {
+  setFieldValue,
+};
+export default connect(null, mapDispatchToProps)(Input);
 
