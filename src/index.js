@@ -12,6 +12,8 @@ const initialState = {
     lastName: '',
     secondLastName: '',
     birthDate: '',
+    state: '',
+    gender: '',
   },
   rfc: '',
   curp: '',
