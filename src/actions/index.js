@@ -1,5 +1,5 @@
-export const getRfcCurp = (payload) => ({
-  type: 'GET_RFC_CURP',
+export const setRfcCurp = (payload) => ({
+  type: 'SET_RFC_CURP',
   payload,
 });
 

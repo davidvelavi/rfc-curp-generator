@@ -13,11 +13,11 @@ class GenerateCurp {
   }
 
   get curp() {
-    return `Este es tu curp ${this._buildCurp(this._form)}`;
+    return `${this._buildCurp(this._form)}`;
   }
 
   get rfc() {
-    return `Este es tu RFC ${this._buildRfc(this._form)}`;
+    return `${this._buildRfc(this._form)}`;
   }
 
   get tableReference() {
@@ -183,7 +183,7 @@ class GenerateCurp {
 
   _searchVower(lastName) {
     const vocales = 'AEIOU';
-    for (const i = 1; i < lastName.length; i++)	{
+    for (let i = 1; i < lastName.length; i++)	{
       const c = lastName.charAt(i);
       if (vocales.indexOf(c) >= 0) {
         return c;

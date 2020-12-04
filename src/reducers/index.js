@@ -1,10 +1,10 @@
 const reducer = (state, action) => {
   switch (action.type) {
 
-    case 'GET_RFC_CURP':
+    case 'SET_RFC_CURP':
       return {
         ...state,
-        curp,
+        ...action.payload,
       };
     case 'SET_FIELD_VALUE':
       return {

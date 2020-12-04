@@ -1,0 +1,25 @@
+.display-item{
+    display: flex;
+}
+.display-item-button{
+    border: none;
+    background-color: transparent;
+    color :rgb(73, 165, 191);
+    cursor: pointer;
+    outline: none;
+    width: 9rem;
+}
+
+.display-item-data{
+    display: flex;
+    flex-grow: 1;
+}
+.display-item-title{
+    font-weight: bold;
+    margin-right: 0.4rem;
+}
+.display-item-value{
+    border: none;
+    color :rgb(73, 165, 191);
+    outline: none;
+}

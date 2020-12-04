@@ -2,20 +2,21 @@
     background-color: #fff;
     border-radius: 0.8rem;
     box-shadow: 0 0.1rem 0.4rem 0.1rem rgba(0,0,0,0.2);
-    height: 60rem;
+    min-height: 60rem;
     margin: 6rem auto;
-    padding-top: 3rem;
+    padding: 4rem;
     width: 50rem;
 }
 
 .form .input-wrapper,
 .form .date-picker,
 .form .select,
-.form .radio-button
+.form .radio-button,
+.form .display-item
 {   margin: 0 auto;
-    margin-top: 3.5rem;
-    width: 80%;    
+    margin-top: 3.5rem; 
 }
+
 
 .form-button-wrapper{
     margin-top: 3rem;

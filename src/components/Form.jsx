@@ -1,16 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import '../assets/styles/components/Form.scss';
-import { getRfcCurp } from '../actions';
+import { setRfcCurp } from '../actions';
 import GenerateCurp from '../utilities/GenerateCurp';
 
-const Form = ({ children, form, getRfcCurp }) => {
+const Form = ({ children, form, setRfcCurp }) => {
 
   const handleForm = (event) => {
     event.preventDefault();
     const generateCurp = new GenerateCurp(form);
-    console.log(generateCurp.curp);
-    console.log(generateCurp.rfc);
+    setRfcCurp({
+      curp: generateCurp.curp,
+      rfc: generateCurp.rfc,
+    });
   };
   const disabled = !Object.values(form).every((item) => !!item);
   return (
@@ -34,7 +36,7 @@ const Form = ({ children, form, getRfcCurp }) => {
 };
 
 const mapDispatchToProps = {
-  getRfcCurp,
+  setRfcCurp,
 };
 const mapStateToProps = ({ dataUser }) => {
   return {
