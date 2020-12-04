@@ -1,0 +1,21 @@
+
+.radio-button-circle{
+    border:solid 0.2rem rgb(117, 189, 209);
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.4rem;
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
+    vertical-align: top;
+    width: 1.4rem;
+}
+.radio-button-input{
+    display: none;
+}
+.radio-button-input:checked + .radio-button-circle{
+    background-color: rgb(117, 189, 209);
+}
+.radio-button-label{
+    cursor: pointer;
+    margin-right: 3rem;
+}

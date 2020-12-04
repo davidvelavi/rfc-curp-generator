@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setFieldValue } from '../actions';
+import '../assets/styles/components/RadioButton.scss';
 
 const RadioButton = (props) => {
   const { id, label, options, dataUser, setFieldValue } = props;
@@ -14,9 +15,17 @@ const RadioButton = (props) => {
     <section className='radio-button'>
       {
         options.map((item, index) => (
-          <label htmlFor={id} key={index}>
+          <label htmlFor={item.gender} key={index} className='radio-button-label'>
             {item.gender}
-            <input type='radio' name={id} value={item.gender} onChange={handleRadio} />
+            <input
+              type='radio'
+              id={item.gender}
+              name={id}
+              value={item.gender}
+              onChange={handleRadio}
+              className='radio-button-input'
+            />
+            <span className='radio-button-circle' />
           </label>
         ))
       }

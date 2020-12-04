@@ -2,27 +2,27 @@ $left-space : 0.5rem;
 
 .input{
     border: none;
-    border: solid 1px red;
-    border-radius: 0.4rem;
-    height: 3.0rem;
+    box-shadow: 0 0.1rem 0.4rem 0.1rem rgba(0,0,0,0.2);
+    border-radius: 0.6rem;
+    height: 4.0rem;
     outline: none;
     padding-left: $left-space;
     width: 100%;
 }
 
 .input:focus + .input-name{
-    top: -3rem;
+    top: -3.5rem;
 }
 .input-name{
     left: $left-space;
-    line-height: 3.0rem;
+    line-height: 4.0rem;
     position: absolute;
     top: 0;
     transition-duration: 0.3s;
     transition-property: top;
 }
 .input-name.hasContent{
-    top: -3rem;
+    top: -3.5rem;
 }
 .input-wrapper{
     display: block;
