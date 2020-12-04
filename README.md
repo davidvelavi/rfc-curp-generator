@@ -1,0 +1,1 @@
+In this project I try to emulate the algorithm to get the rfc and curp for educational purposes only and does not replace official documents issued by the government
